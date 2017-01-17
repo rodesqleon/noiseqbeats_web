@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Custom CSS -->
+	<style type="text/css">
+	.navbar-header {
+		float: left;
+		padding: -5px;
+		text-align: center;
+		width: 100%;
+	}
+	.navbar-brand {
+		float:none;
+	}
+	.thumbnail{
+		padding: 20px;
+		top: 10px;
+	}
+	body, html {
+    height: 100%;
+    padding-top: 44px;
+	}
+	.footer-image-container{
+		text-align: center;    
+		margin: auto;
+	}
+	.ribbon {
+	  position: absolute;
+	  right: 10px; top: -5px;
+	  z-index: 1;
+	  overflow: hidden;
+	  width: 70px; height: 75px;
+	  text-align: right;
+	}
+	.ribbon span {
+	  font-size: 10px;
+	  font-weight: bold;
+	  color: #FFF;
+	  text-transform: uppercase;
+	  text-align: center;
+	  line-height: 20px;
+	  transform: rotate(45deg);
+	  -webkit-transform: rotate(45deg);
+	  width: 100px;
+	  display: block;
+	  background: #79A70A;
+	  background: linear-gradient(#F70505 0%, #8F0808 100%);
+	  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+	  position: absolute;
+	  top: 19px; right: -21px;
+	}
+	.ribbon span::before {
+	  content: "";
+	  position: absolute; left: 0px; top: 100%;
+	  z-index: -1;
+	  border-left: 3px solid #8F0808;
+	  border-right: 3px solid transparent;
+	  border-bottom: 3px solid transparent;
+	  border-top: 3px solid #8F0808;
+	}
+	.ribbon span::after {
+	  content: "";
+	  position: absolute; right: 0px; top: 100%;
+	  z-index: -1;
+	  border-left: 3px solid transparent;
+	  border-right: 3px solid #8F0808;
+	  border-bottom: 3px solid transparent;
+	  border-top: 3px solid #8F0808;
+	}
+	</style>
+	<!-- DISABLE RIGHT CLICK -->
+	<script language=JavaScript>
+<!--
+
+//Disable right mouse click Script
+//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="Function Disabled!";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("return false")
+
+// --> 
+</script>
+</head>
+<body>
+	<!-- START NAVIGATION BAR -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+	<div class="navbar-header">
+	  <a class="navbar-brand" href="index.html">
+	  	<!--<img alt="Brand" src="img/logo/noise_eq_logo_white.png" style="width: 160px; height: 45px;">-->
+	  	<button type="button" class="btn btn-default navbar-btn" style="color: black; background-color:white;">FREE</button>
+	  </a>
+	  <a class="navbar-brand" href="paid.html">
+	  	<button type="button" class="btn btn-default navbar-btn" style="color: white; background-color:black;">PAID</button>
+	  </a>
+	</div>
+	</div>
+	</nav>
+	<!-- END NAVIGATION BAR -->
+	<!-- START IMG -->
+	<div class="container-fluid">
+		<div class="footer-image-container" style="width:40%;">
+			<img class="img-responsive footer-image" src="img/logo/noise_eq_logo_black.png">
+		</br>
+		</br>
+		</div>
+	</div>
+	<!-- END IMG -->
+
+	<!-- START ITEM CONTENT -->
+	<div class="container-fluid">
+	<div class="row">
+	<div class="col-sm-6 col-md-4">
+	<div class="thumbnail">
+	  <div class="caption">
+	    <h3>Thumbnail label</h3>
+	    <p><div class="ribbon"><span>$14.00</span></div><img src="img/item/videoHolder.jpg" style="width: 100%;"/></p>
+	    <p style="text-align: center;"><a href="#" class="btn btn-default" style="color: white; background-color:black;" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+	  </div>
+	</div>
+	</div>
+	<div class="col-sm-6 col-md-4">
+	<div class="thumbnail">
+	  <div class="caption">
+	    <h3>Thumbnail label</h3>
+	    <p><div class="ribbon"><span>$14.00</span></div><img src="img/item/videoHolder.jpg" style="width: 100%;"/></p>
+	    <p style="text-align: center;"><a href="#" class="btn btn-default" style="color: white; background-color:black;" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+	  </div>
+	</div>
+	</div>
+	<div class="col-sm-6 col-md-4">
+	<div class="thumbnail">
+	  <div class="caption">
+	    <h3>Thumbnail label</h3>
+	    <p><div class="ribbon"><span>$14.00</span></div><img src="img/item/videoHolder.jpg" style="width: 100%;"/></p>
+	    <p style="text-align: center;"><a href="#" class="btn btn-default" style="color: white; background-color:black;" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+	  </div>
+	</div>
+	</div>
+	<div class="col-sm-6 col-md-4">
+	<div class="thumbnail">
+	  <div class="caption">
+	    <h3>Thumbnail label</h3>
+	    <p><div class="ribbon"><span>$14.00</span></div><img src="img/item/videoHolder.jpg" style="width: 100%;"/></p>
+	    <p style="text-align: center;"><a href="#" class="btn btn-default" style="color: white; background-color:black;" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+	  </div>
+	</div>
+	</div>
+	<div class="col-sm-6 col-md-4">
+	<div class="thumbnail">
+	  <div class="caption">
+	    <h3>Thumbnail label</h3>
+	    <p><div class="ribbon"><span>$14.00</span></div><img src="img/item/videoHolder.jpg" style="width: 100%;"/></p>
+	    <p style="text-align: center;"><a href="#" class="btn btn-default" style="color: white; background-color:black;" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+	  </div>
+	</div>
+	</div>
+	<div class="col-sm-6 col-md-4">
+	<div class="thumbnail">
+	  <div class="caption">
+	    <h3>Thumbnail label</h3>
+	    <p><div class="ribbon"><span>$14.00</span></div><img src="img/item/videoHolder.jpg" style="width: 100%;"/></p>
+	    <p style="text-align: center;"><a href="#" class="btn btn-default" style="color: white; background-color:black;" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+	  </div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<!-- END ITEM CONTENT -->
+	<div id="footer">
+		
+    </div>
+</body>
+</html>
